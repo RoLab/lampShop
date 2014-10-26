@@ -1,0 +1,51 @@
+.active-link {
+    height: 33.33333333333%;
+    width: 100%;
+    -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+    cursor: pointer;
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+    -moz-transition: box-shadow 0.3s ease-in-out;
+    -ms-transition: box-shadow 0.3s ease-in-out;
+    -o-transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.active-link:hover {
+    -webkit-box-shadow: inset 0 0 50px rgba(255,255,255,.5);
+    box-shadow: inset 0 0 50px rgba(255,255,255,.5);
+}
+
+.active-link > p {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.active-link:before {
+    content: "";
+    display: inline-block;
+    min-height: inherit;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.glass {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    opacity: 0;
+    display: none;
+    background-color: #FFFFFF;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.preview {
+    height: 300px;
+}
+
