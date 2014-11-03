@@ -1,6 +1,10 @@
 ul.nav > li {
 }
 
+body {
+    background-image: url(images/background.jpg);
+}
+
 .nav-rolab {
     background: none;
     border-top-left-radius: 0;
