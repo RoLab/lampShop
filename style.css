@@ -1,6 +1,10 @@
 ul.nav > li {
 }
 
+hr {
+    border-top: 1px solid #ccc
+}
+
 body {
     background-image: url(images/background.jpg);
 }
@@ -52,15 +56,6 @@ nav.nav-rolab {
     background-repeat: repeat-x;
 }
 
-#cart-block {
-    width: 240px;
-    height: 50px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: #ffffff;
-}
-
 .pager-rolab > li > a {
     color: #999999;
     font-size: 12px;
@@ -99,6 +94,11 @@ nav.nav-rolab {
     text-align: center;
 }
 
+.placer-rolab > img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .placer-rolab:before {
     content: "";
     display: inline-block;
@@ -130,5 +130,83 @@ nav.nav-rolab {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
+    line-height: 15px;
+    padding: 7px;
+}
 
+.cart {
+    color: black;
+    border: 3px solid transparent;
+    width: 240px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ffffff;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    -ms-transition: border-color 0.3s ease-in-out;
+    -o-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.cart:hover {
+    text-decoration: none;
+    color: black;
+    border-color: #ba0000
+}
+
+.cart-unit {
+    overflow: hidden;
+    margin: 20px 0
+}
+
+.cart-thumbnail {
+    width:20%;
+    float: left;
+    overflow: hidden
+}
+.cart-thumbnail > .placer-rolab {
+    height: 7em;
+}
+
+.cart-name {
+    width:60%;
+    float: left;
+}
+
+.cart-name > p {
+    font-size: 15px; float:left; margin-right: 60px;
+}
+
+.cart-name > h3 {
+    margin: 5px 0 10px 0
+}
+
+.cart-price {
+    width:17%;
+    float: left;
+    text-align: right
+}
+
+.cart-price > h3 {
+    color: #bc0000;
+    text-align: right;
+    margin-top:5px;
+}
+
+.cart-summary h3 {
+    color: #bc0000;
+    margin: 0;
+    float: right;
+}
+.cart-summary div {
+    float: right; width: 40%
+}
+.cart-summary {
+    padding: 3%;
+}
+.cart-summary p{
+    margin-top: 3px;
+    float:left;
 }
