@@ -212,3 +212,14 @@ nav.nav-rolab {
     margin-top: 3px;
     float:left;
 }
+
+.cart > div {
+    float: left;
+    height: 100%;
+}
+
+.cart p.lead {
+    margin:0;
+    line-height: 36px;
+    font-size: 18px;
+}
