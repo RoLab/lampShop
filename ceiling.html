@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Lamp shop</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div id="header">
+    <div class="header-image">
+        <img src="images/navbar-header.jpg"/>
+        <a href="/lampshop/cart.html" class="cart">
+            <div>
+                <img src="images/cart.png">
+            </div>
+            <div style="position:relative; width:179px;">
+                <p class="lead"><strong>МОЯ КОРЗИНА</strong></p>
+
+                <p style="position: absolute; bottom:0; margin: 0">
+                    <small>Товаров: <span id="goodsCount">5</span> Сумма: <span id="totalCost">18943</span> руб.</small>
+                </p>
+            </div>
+        </a>
+    </div>
+    <nav class="navbar navbar-default nav-rolab" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand brand-rolab" href="/lampshop/index.html">Главная</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav nav-rolab">
+                    <li><a href="/lampShop/ceiling.html">Люстры</a></li>
+                    <li><a href="#">Светильники</a></li>
+                    <li><a href="#">Бра</a></li>
+                    <li><a href="#">Торшеры</a></li>
+                    <li><a href="#">Настольные лампы</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Поиск по сайту">
+                    </div>
+                    <button type="submit" class="btn btn-default">Искать</button>
+                </form>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</div>
+<div>
+    <ol class="breadcrumb" style="background-color: transparent">
+        <li><a href="/lampshop/index.html">Главная</a></li>
+        <li class="active">Люстры</li>
+    </ol>
+</div>
+<div class="row">
+<div class="col-md-2 col-sm-3">
+<div class="panel-group" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading gradient-rolab" data-toggle="collapse" role="tab" id="headingPrice" href="#bodyPrice" aria-expanded="true" aria-controls="bodyPrice">
+            <h4 class="panel-title">
+                Цена
+            </h4>
+        </div>
+        <div id="bodyPrice" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingPrice">
+            <div class="btn-group-vertical btn-group-rolab" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="radio" name="radioPrice"/>Все
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="radioPrice"/>до 2000
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="radioPrice"/>от 2000 до 5000
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="radioPrice"/>от 5000 до 10000
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading gradient-rolab" role="tab" id="headingType" data-toggle="collapse" href="#bodyType" aria-expanded="true" aria-controls="bodyType">
+            <h4 class="panel-title">
+                Типы
+            </h4>
+        </div>
+        <div id="bodyType" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingType">
+            <div class="btn-group-vertical btn-group-rolab" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="radio" name="radioType"/>Все
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="radioType"/>Декоративные
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="radioType"/>Офисные
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading gradient-rolab" role="tab" id="headingStyle" data-toggle="collapse" href="#bodyStyle" aria-expanded="true" aria-controls="bodyThree">
+            <h4 class="panel-title">
+                Стили
+            </h4>
+        </div>
+        <div id="bodyStyle" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingStyle">
+            <div class="btn-group-vertical btn-group-rolab" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="checkbox" name="checkStyle"/>Класик
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" name="checkStyle"/>Кантри
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" name="checkStyle"/>Модерн
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" name="checkStyle"/>Техно
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" name="checkStyle"/>Тиффани
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" name="checkStyle"/>Флористика
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" name="checkStyle"/>Хай-тэк
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" name="checkStyle"/>Эко
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" name="checkStyle"/>Этно
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-md-10 col-sm-9">
+    <div>
+        <h2 style="margin-top: 0">Люстры</h2>
+        <hr/>
+        <div style="overflow: hidden">
+            <nav style="float: left">
+                <ul class="pager pager-rolab" style="margin: 0">
+                    <li class="disabled"><a href="#"><strong>Сортировать по:</strong></a></li>
+                    <li><a href="#">Популярности</a></li>
+                    <li class="active"><a href="#">Имени</a></li>
+                    <li><a href="#">Цене</a></li>
+                </ul>
+            </nav>
+            <nav style="float: right">
+                <ul class="pager pager-rolab" style="margin: 0">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li class="disabled"><a href="#">...</a></li>
+                    <li><a href="#">17</a></li>
+                    <li><a href="#">След.&raquo;</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="row" style="margin-top:30px">
+        <div class="col-lg-3 col-md-4 col-xs-6 col-rolab">
+            <div class="thumbnail thumbnail-rolab">
+                <div class="placer-rolab placer-rolab-hit">
+                    <img style="max-width: 100%; max-height: 100%" src="images/lamp-main-1.jpg"/>
+                </div>
+                <div class="caption caption-rolab">
+                    <p><strong>Лампа настолькная Luassole Ciampino LSQ-5804-03</strong></p>
+
+                    <p>Производитель: <span>Luassole</span></p>
+
+                    <p>Артикул: <span>LSQ-5804-03</span></p>
+
+                    <div class="price-rolab">
+                        <p style="left:0; color: #aaa">
+                            <del>2 859 руб.</del>
+                        </p>
+                        <p class="lead" style="right: 0; color: #bc0000">2 195 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="thumbnail thumbnail-rolab">
+                <div class="placer-rolab placer-rolab-hit">
+                    <img style="max-width: 100%; max-height: 100%" src="images/lamp-main-2.jpg"/>
+                </div>
+                <div class="caption caption-rolab">
+                    <p><strong>Лампа настолькная Luassole Ciampino LSQ-5804-03</strong></p>
+
+                    <p>Производитель: <span>Luassole</span></p>
+
+                    <p>Артикул: <span>LSQ-5804-03</span></p>
+
+                    <div class="price-rolab">
+                        <p style="left:0; color: #aaa">
+                            <del>2 859 руб.</del>
+                        </p>
+                        <p class="lead" style="right: 0; color: #bc0000">2 195 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="thumbnail thumbnail-rolab">
+                <div class="placer-rolab placer-rolab-hit">
+                    <img style="max-width: 100%; max-height: 100%" src="images/lamp-main-3.jpg"/>
+                </div>
+                <div class="caption caption-rolab">
+                    <p><strong>Лампа настолькная Luassole Ciampino LSQ-5804-03</strong></p>
+
+                    <p>Производитель: <span>Luassole</span></p>
+
+                    <p>Артикул: <span>LSQ-5804-03</span></p>
+
+                    <div class="price-rolab">
+                        <p style="left:0; color: #aaa">
+                            <del>2 859 руб.</del>
+                        </p>
+                        <p class="lead" style="right: 0; color: #bc0000">2 195 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="thumbnail thumbnail-rolab">
+                <div class="placer-rolab placer-rolab-hit">
+                    <img style="max-width: 100%; max-height: 100%" src="images/lamp-main-4.jpg"/>
+                </div>
+                <div class="caption caption-rolab">
+                    <p><strong>Лампа настолькная Luassole Ciampino LSQ-5804-03</strong></p>
+
+                    <p>Производитель: <span>Luassole</span></p>
+
+                    <p>Артикул: <span>LSQ-5804-03</span></p>
+
+                    <div class="price-rolab">
+                        <p style="left:0; color: #aaa">
+                            <del>2 859 руб.</del>
+                        </p>
+                        <p class="lead" style="right: 0; color: #bc0000">2 195 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 col-rolab">
+            <div class="thumbnail thumbnail-rolab">
+                <div class="placer-rolab placer">
+                    <img style="max-width: 100%; max-height: 100%" src="images/lamp-main-3.jpg"/>
+                </div>
+                <div class="caption caption-rolab">
+                    <p><strong>Лампа настолькная Luassole Ciampino LSQ-5804-03</strong></p>
+
+                    <p>Производитель: <span>Luassole</span></p>
+
+                    <p>Артикул: <span>LSQ-5804-03</span></p>
+
+                    <div class="price-rolab">
+                        <p style="left:0; color: #aaa">
+                            <del>2 859 руб.</del>
+                        </p>
+                        <p class="lead" style="right: 0; color: #bc0000">2 195 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="thumbnail thumbnail-rolab">
+                <div class="placer-rolab">
+                    <img style="max-width: 100%; max-height: 100%" src="images/lamp-main-4.jpg"/>
+                </div>
+                <div class="caption caption-rolab">
+                    <p><strong>Лампа настолькная Luassole Ciampino LSQ-5804-03</strong></p>
+
+                    <p>Производитель: <span>Luassole</span></p>
+
+                    <p>Артикул: <span>LSQ-5804-03</span></p>
+
+                    <div class="price-rolab">
+                        <p style="left:0; color: #aaa">
+                            <del>2 859 руб.</del>
+                        </p>
+                        <p class="lead" style="right: 0; color: #bc0000">2 195 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="thumbnail thumbnail-rolab">
+                <div class="placer-rolab">
+                    <img style="max-width: 100%; max-height: 100%" src="images/lamp-main-1.jpg"/>
+                </div>
+                <div class="caption caption-rolab">
+                    <p><strong>Лампа настолькная Luassole Ciampino LSQ-5804-03</strong></p>
+
+                    <p>Производитель: <span>Luassole</span></p>
+
+                    <p>Артикул: <span>LSQ-5804-03</span></p>
+
+                    <div class="price-rolab">
+                        <p style="left:0; color: #aaa">
+                            <del>2 859 руб.</del>
+                        </p>
+                        <p class="lead" style="right: 0; color: #bc0000">2 195 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="thumbnail thumbnail-rolab">
+                <div class="placer-rolab">
+                    <img src="images/lamp-main-2.jpg"/>
+                </div>
+                <div class="caption caption-rolab">
+                    <p><strong>Лампа настолькная Luassole Ciampino LSQ-5804-03</strong></p>
+
+                    <p>Производитель: <span>Luassole</span></p>
+
+                    <p>Артикул: <span>LSQ-5804-03</span></p>
+
+                    <div class="price-rolab">
+                        <p style="left:0; color: #aaa">
+                            <del>2 859 руб.</del>
+                        </p>
+                        <p class="lead" style="right: 0; color: #bc0000">2 195 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

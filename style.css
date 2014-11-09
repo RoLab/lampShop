@@ -15,7 +15,7 @@ body {
     border-top-right-radius: 0;
 }
 
-.nav-rolab > li > a,.brand-rolab{
+.nav-rolab > li > a,.brand-rolab {
     border-left: 1px solid #dadada;
     border-right: 1px solid #dadada;
     border-left: 0;
@@ -45,7 +45,7 @@ ul.nav-rolab {
     background-color: white;
     border-right: 1px solid white;
 }
-nav.nav-rolab {
+nav.nav-rolab, .gradient-rolab {
     background-color: #e5e5e5;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
     background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
@@ -222,4 +222,47 @@ nav.nav-rolab {
     margin:0;
     line-height: 36px;
     font-size: 18px;
+}
+
+.btn-group-rolab {
+    width: 100%
+}
+
+.btn-group-rolab>.btn:first-child {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0;
+    border-top: 0;
+}
+.btn-group-rolab>.btn:last-child {
+    border-bottom: 0;
+}
+.btn-group-rolab>.btn {
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn-group-rolab>.btn:hover {
+    background-color: #d9534f;
+    color: #FFFFFF
+}
+
+.btn-group-rolab>.btn:active {
+    background-color: #bc0000;
+    color: #FFFFFF
+}
+
+.btn-group-rolab>.btn.active {
+    background-color: #bc0000;
+    color: #FFFFFF
+}
+
+.nav-rolab > li > a:hover,.brand-rolab:hover,.gradient-rolab:hover {
+    background-color: #dddddd;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
+    background-image: -webkit-linear-gradient(top, #eeeeee 0%, #dddddd 100%);
+    background-image: -o-linear-gradient(top, #eeeeee 0%, #dddddd 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #eeeeee), to(#dddddd));
+    background-image: linear-gradient(top, #eeeeee 0%, #dddddd 100%);
+    background-image: -moz-linear-gradient(top, #eeeeee 0%, #dddddd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd',GradientType=0 );
 }
